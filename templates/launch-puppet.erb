@@ -39,7 +39,7 @@ if $(ping -q -c1 -w10 $SERVER &>/dev/null); then
         ;;
       esac
     fi
-    $BIN $ARGS --verbose --ignorecache $@
+    $BIN $ARGS --verbose --ignorecache --no-report $@
   else
 
     for flag in $FLAGS; do
